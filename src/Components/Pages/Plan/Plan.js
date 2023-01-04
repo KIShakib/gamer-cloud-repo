@@ -4,13 +4,12 @@ import advancedPlan from "../../../Assets/Images/icon-advanced.svg";
 import proPlan from "../../../Assets/Images/icon-pro.svg";
 import { Link } from 'react-router-dom';
 import { UseContext } from '../../UseContext/useContext';
+import useDynamicTitle from '../../Hooks/useDynamicTitle';
 
 const Plan = () => {
     const { monthlyOrYearly, setMonthlyOrYearly, setSelectedPlan } = useContext(UseContext);
 
-    // const handleSelectedPlan = (plan) => {
-    //     setSelectedPlan(plan)
-    // }
+    useDynamicTitle("Choice Your Plan")
 
 
     const handleMonthlyOrYearly = (e) => {

@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import useDynamicTitle from '../../Hooks/useDynamicTitle';
 import { UseContext } from '../../UseContext/useContext';
 
 const AddOns = () => {
+
+    useDynamicTitle("Add-ons")
 
     const { monthlyOrYearly, selectedAddOns, setSelectedAddOns } = useContext(UseContext);
 

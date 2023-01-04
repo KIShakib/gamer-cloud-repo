@@ -1,10 +1,13 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useDynamicTitle from '../../Hooks/useDynamicTitle';
 import { UseContext } from '../../UseContext/useContext';
 
 
 const PersonalInfo = () => {
     const navigate = useNavigate();
+
+    useDynamicTitle("Personal Info")
 
     const { userInfo, setUserInfo } = useContext(UseContext);
 

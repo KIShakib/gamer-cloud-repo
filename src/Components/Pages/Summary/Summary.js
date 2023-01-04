@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import useDynamicTitle from '../../Hooks/useDynamicTitle';
 import { UseContext } from '../../UseContext/useContext';
 
 const Summary = () => {
     const { userInfo, setUserInfo, monthlyOrYearly, selectedPlan, selectedAddOns } = useContext(UseContext);
-    // console.log(selectedAddOns);
+
+    useDynamicTitle("Summary");
 
     let addOnCost = 0;
 
