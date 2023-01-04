@@ -9,12 +9,12 @@ const PersonalInfo = () => {
     }
 
     return (
-        <div className="mt-8" style={{ fontFamily: "'Ubuntu', sans-serif" }}>
+        <div className="mt-8 w-[500px]" style={{ fontFamily: "'Ubuntu', sans-serif" }}>
             <div className='mb-8'>
                 <h2 className='text-4xl font-bold mb-2 text-neutral'>Personal Info</h2>
                 <h4 className='text-[#B6B7BC] text-lg'>Please provide your name, email address, and phone number.</h4>
             </div>
-            <div className="mx-auto w-full max-w-[550px]">
+            <div className="">
                 <form
                     className='flex flex-col gap-y-2 text-[#1d5da8]'
                     onSubmit={handlePersonalInfo}
@@ -64,7 +64,7 @@ const PersonalInfo = () => {
                             className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-lg text-[#174B88 outline-none focus:border-[#6A64F1] focus:shadow-md"
                         />
                     </div>
-                    <div className='flex items-end justify-end mt-6'>
+                    <div className='flex items-end justify-end'>
                         <Link
                             to="/plan"
                             type='submit'

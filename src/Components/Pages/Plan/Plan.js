@@ -18,14 +18,14 @@ const Plan = () => {
     }
 
     return (
-        <div className="mt-8 w-[600px]" style={{ fontFamily: "'Ubuntu', sans-serif" }}>
+        <div className="mt-8 w-[500px]" style={{ fontFamily: "'Ubuntu', sans-serif" }}>
             <div className='mb-8'>
                 <h2 className='text-4xl font-bold mb-2 text-neutral'>Select your plan</h2>
                 <h4 className='text-[#B6B7BC] text-lg'>You have the option of monthly or yearly billing.</h4>
             </div>
 
 
-            <div className='flex justify-start gap-x-4'>
+            <div className='flex justify-start gap-x-8'>
 
                 <div class="flex border hover:border-[#6A64F1] cursor-pointer rounded-xl">
                     <div class="p-4 h-44 w-36 flex flex-col justify-between">
@@ -91,7 +91,7 @@ const Plan = () => {
                 </div>
             </div>
 
-            <div className="form-control w-[470px] mt-10 flex flex-row items-center justify-center bg-slate-50 rounded-lg font-semibold">
+            <div className="form-control w-full mt-10 flex flex-row items-center justify-center bg-slate-50 rounded-lg font-semibold">
                 <p className={`${!checked ? "text-neutral" : "text-[#B6B7BC]"}`}>Monthly</p>
                 <label className="label cursor-pointer">
                     <input
@@ -103,16 +103,16 @@ const Plan = () => {
             </div>
 
 
-            <div className='flex items-end justify-between mt-20 w-[470px]'>
+            <div className='flex items-end justify-between mt-24 w-full'>
                 <Link
                     to="/personal-info"
                     type='submit'
-                    className="py-3 px-8 text-[#1d5da8] font-semibold text-lg"
+                    className="py-3 text-[#B6B7BC] hover:text-[#1d5da8] font-semibold text-lg"
                 >
                     Go Back
                 </Link>
                 <Link
-                    to="/plan"
+                    to="/add-ons"
                     type='submit'
                     className="rounded-md bg-[#174B88] py-3 px-8 text-white"
                 >
