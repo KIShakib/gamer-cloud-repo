@@ -30,7 +30,7 @@ const Plan = () => {
             </div>
 
 
-            <div className='lg:flex justify-start flex flex-col gap-x-8 gap-y-5'>
+            <div className='lg:flex lg:flex-row justify-start flex flex-col gap-x-8 gap-y-5'>
 
                 <label className="relative cursor-pointer">
                     <input

@@ -7,7 +7,8 @@ const Sidebar = () => {
     const navLinkStyle = ({ isActive }) => {
         return {
             // textDecoration: isActive ? 'underline' : 'none',
-            backgroundColor: isActive ? "#BCE2FD" : "transparent"
+            backgroundColor: isActive ? "#BCE2FD" : "transparent",
+            color: isActive ? "#002657" : ""
         }
     }
 

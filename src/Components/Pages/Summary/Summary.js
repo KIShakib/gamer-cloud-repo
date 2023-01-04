@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { UseContext } from '../../UseContext/useContext';
 
@@ -30,6 +31,8 @@ const Summary = () => {
         console.log(sumWithInitial);
         addOnCost = sumWithInitial;
     }
+
+
 
     return (
         <div className="lg:mt-8 lg:m-0 lg:w-[500px] lg:shadow-none shadow lg:p-0 p-4 -mt-14 lg:rounded-none rounded-xl bg-white" style={{ fontFamily: "'Ubuntu', sans-serif" }}>
@@ -88,6 +91,7 @@ const Summary = () => {
                     Go Back
                 </Link>
                 <Link
+                    onClick={() => toast.success('Subscription confirmed')}
                     to="/confirmation"
                     type='submit'
                     className="rounded-md bg-[#174B88] hover:bg-[#938CFE] py-3 px-8 text-white"
