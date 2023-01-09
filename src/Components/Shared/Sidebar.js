@@ -16,9 +16,9 @@ const Sidebar = () => {
         <div className="flex flex-col w-64 bg-white rounded-xl bg-cover text-white h-[550px] mr-32" style={{ backgroundImage: `url(${sidebarBg})` }}>
             <ul className="flex flex-col py-8 gap-y-5">
                 <li>
-                    <NavLink to="/personal-info">
+                    <NavLink to="/">
                         <div className='flex items-center gap-x-4 ml-8'>
-                            <NavLink to="/personal-info" style={navLinkStyle} className='w-8 h-8 rounded-full border-2 flex justify-center items-center'>
+                            <NavLink to="/" style={navLinkStyle} className='w-8 h-8 rounded-full border-2 flex justify-center items-center'>
                                 <span>1</span>
                             </NavLink>
                             <div>

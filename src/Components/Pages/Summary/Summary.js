@@ -49,7 +49,7 @@ const Summary = () => {
                         <h3>
                             {selectedPlan.name} {`${monthlyOrYearly ? "(Yearly)" : "(Monthly)"}`}
                         </h3>
-                        <button className='underline font-light text-blue-700'>Change</button>
+                        <Link to="/plan" className='underline font-light text-blue-700'>Change</Link>
                     </div>
                     <p>
                         {monthlyOrYearly ? "$" + selectedPlan.yearly + "/yr" : "$" + selectedPlan.monthly + "/mo"}

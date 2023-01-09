@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex flex-col w-full bg-white bg-cover text-white h-40" style={{ backgroundImage: `url(${topBar})` }}>
             <ul className="flex justify-center gap-x-4 mt-10">
                 <li>
-                    <NavLink to="/personal-info" style={navLinkStyle} className='w-8 h-8 rounded-full border-2 flex justify-center items-center'>
+                    <NavLink to="/" style={navLinkStyle} className='w-8 h-8 rounded-full border-2 flex justify-center items-center'>
                         <span>1</span>
                     </NavLink>
                 </li>
